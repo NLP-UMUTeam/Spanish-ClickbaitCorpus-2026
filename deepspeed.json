@@ -1,0 +1,60 @@
+{
+    "fp16": {
+        "enabled": false
+    },
+    "bf16": {
+        "enabled": true
+    },
+    "optimizer": {
+        "type": "AdamW",
+        "params": {
+            "lr": "auto",
+            "betas": [0.9, 0.95],
+            "eps": 1e-12,
+            "weight_decay": 0.0,
+            "torch_adam": true,
+            "adam_w_mode": true
+        }
+    },
+    "zero_optimization": {
+        "stage": 2,
+        "offload_optimizer": {
+            "device": "cpu",
+            "pin_memory": true
+        },
+        "allgather_partitions": true,
+        "allgather_bucket_size": 5e8,
+        "overlap_comm": true,
+        "reduce_scatter": true,
+        "reduce_bucket_size": 5e8,
+        "contiguous_gradients": true
+    },
+    "gradient_accumulation_steps": "auto",
+    "gradient_clipping": 1.0,
+    "steps_per_print": 1000,
+    "train_batch_size": "auto",
+    "train_micro_batch_size_per_gpu": "auto",
+    "wall_clock_breakdown": false,
+    "compression_training": {
+        "weight_quantization": {
+            "shared_parameters": {},
+            "different_groups": {}
+        },
+        "activation_quantization": {
+            "shared_parameters": {},
+            "different_groups": {}
+        },
+        "sparse_pruning": {
+            "shared_parameters": {},
+            "different_groups": {}
+        },
+        "row_pruning": {
+            "shared_parameters": {},
+            "different_groups": {}
+        },
+        "head_pruning": {
+            "shared_parameters": {},
+            "different_groups": {}
+        }
+    }
+}

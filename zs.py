@@ -5,13 +5,10 @@ import random
 import argparse
 import csv
 import gc
-import os
 import evaluate
 
 import numpy as np
 import pandas as pd
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
 
 SEED = 42
 MAX_NEW_TOKENS = 256

@@ -1,0 +1,57 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\begin{tabular}{lcccccc|cccccc}
+
+\toprule
+\multicolumn{13}{c}{\textbf{Base version of the LLMs}}  \\
+
+\midrule
+ & \multicolumn{6}{c|}{\textbf{QA}} & \multicolumn{6}{c}{\textbf{SUMMARIZATION}} \\
+\midrule
+
+\textbf{Model} & \textbf{R1} & \textbf{R2} & \textbf{RL} & \textbf{RL\_Sum} & \textbf{BS} & \textbf{Hybrid} & \textbf{R1} & \textbf{R2} & \textbf{RL} & \textbf{RL\_Sum} & \textbf{BS} & \textbf{Hybrid} \\
+\midrule
+
+Gemma 2 2b & 03.27 & 00.96 & 02.68 & 02.70 & -- -- & -- -- & 03.67 & 00.99 & 03.03 & 03.05 & -- -- & -- -- \\
+Gemma 3 1b & 06.49 & 00.98 & 05.06 & 05.10 & -- -- & -- -- & 05.66 & 00.77 & 04.14 & 04.19 & -- -- & -- -- \\
+Gemma 3 4b & 08.01 & 01.23 & 06.25 & 06.23 & -- -- & -- -- & 06.48 & 01.20 & 04.72 & 04.77 & -- -- & -- -- \\
+LLaMA 3.1 8b & 06.96 & 01.77 & 05.33 & 05.35 & -- -- & -- -- & 06.08 & 01.54 & 04.77 & 04.79 & -- -- & -- -- \\
+LLaMA 3.2 1b & 06.79 & 01.82 & 05.69 & 05.69 & -- -- & -- -- & 05.32 & 01.33 & 04.25 & 04.31 & -- -- & -- -- \\
+LLaMA 3.2 3b & 07.19 & 02.03 & 05.61 & 05.67 & -- -- & -- -- & 06.30 & 01.46 & 05.09 & 05.13 & -- -- & -- -- \\
+Qwen 3 1.7b & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- \\
+Qwen 3 4b & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- \\
+Qwen 3 8b & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- \\
+Mistral 7b v0.3 & 03.21 & 00.78 & 02.60 & 02.62 & -- -- & -- -- & 03.01 & 00.49 & 02.42 & 02.46 & -- -- & -- -- \\
+OpenChat 3.5 0106 & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- \\
+DeepSeek llm 7b & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- & -- -- \\
+SOLAR 10 v1 & 02.73 & 00.53 & 02.12 & 02.15 & -- -- & -- -- & 03.07 & 00.69 & 02.56 & 02.62 & -- -- & -- -- \\
+
+\midrule
+\multicolumn{13}{c}{\textbf{Instructed version of the LLMs}}  \\
+
+\midrule
+ & \multicolumn{6}{c|}{\textbf{QA}} & \multicolumn{6}{c}{\textbf{SUMMARIZATION}} \\
+\midrule
+
+\textbf{Model} & \textbf{R1} & \textbf{R2} & \textbf{RL} & \textbf{RL\_Sum} & \textbf{BS} & \textbf{Hybrid} & \textbf{R1} & \textbf{R2} & \textbf{RL} & \textbf{RL\_Sum} & \textbf{BS} & \textbf{Hybrid} \\
+\midrule
+
+Gemma 2 2b & 06.93 & 04.30 & 06.44 & 06.48 & -- -- & -- -- & 06.49 & 03.41 & 05.82 & 05.75 & -- -- & -- -- \\
+Gemma 3 1b & 20.18 & 09.36 & 17.18 & 17.14 & -- -- & -- -- & 14.38 & 04.73 & 11.37 & 11.36 & -- -- & -- -- \\
+\underline{\textbf{Gemma 3 4b}} & 26.28 & 17.98 & \textbf{25.26} & 25.15 & -- -- & -- -- & 21.60 & 10.04 & \underline{17.92} & 17.96 & -- -- & -- -- \\
+LLaMA 3.1 8b & 23.76 & 15.24 & 20.94 & 21.32 & -- -- & -- -- & 21.46 & 10.39 & 17.49 & 17.61 & -- -- & -- -- \\
+LLaMA 3.2 1b & 18.71 & 09.12 & 16.75 & 16.65 & -- -- & -- -- & 18.31 & 07.11 & 15.04 & 15.00 & -- -- & -- -- \\
+LLaMA 3.2 3b & 25.12 & 15.73 & 22.73 & 22.84 & -- -- & -- -- & 21.20 & 09.92 & 18.10 & 18.25 & -- -- & -- -- \\
+Qwen 3 1.7b & 22.17 & 12.04 & 19.91 & 19.92 & -- -- & -- -- & 20.38 & 08.44 & 16.76 & 16.80 & -- -- & -- -- \\
+Qwen 3 4b & 24.99 & 15.99 & 23.27 & 23.40 & -- -- & -- -- & 19.96 & 08.37 & 15.86 & 15.91 & -- -- & -- -- \\
+Qwen 3 8b & 25.91 & 16.41 & 23.59 & 23.83 & -- -- & -- -- & 20.21 & 08.74 & 16.21 & 16.26 & -- -- & -- -- \\
+Mistral 7b v0.3 & 22.10 & 11.62 & 18.90 & 18.95 & -- -- & -- -- & 19.05 & 09.13 & 15.56 & 15.66 & -- -- & -- -- \\
+OpenChat 3.5 0106 & 24.89 & 15.03 & 22.14 & 22.31 & -- -- & -- -- & 19.83 & 09.38 & 16.50 & 16.57 & -- -- & -- -- \\
+DeepSeek llm 7b & 20.52 & 10.56 & 17.69 & 17.63 & -- -- & -- -- & 17.90 & 07.09 & 13.92 & 14.01 & -- -- & -- -- \\
+SOLAR 10 v1 & 21.41 & 13.27 & 19.09 & 19.08 & -- -- & -- -- & 15.96 & 06.79 & 12.65 & 12.67 & -- -- & -- -- \\
+\bottomrule
+\end{tabular}
+\caption{ZS performance for QA and summarization across base and instruction-tuned variants. Scores are reported for ROUGE-1 (R1), ROUGE-2 (R2), ROUGE-L (RL), ROUGE-Lsum (RL\_Sum), BERTScore F1 (BS) and the Hybrid metric (Hybrid). Values are expressed as percentages. For each formulation, the best QA result is highlighted in bold, while the best summarization result is underlined. Dashes (--) indicate configurations that were not evaluated. Specifically, only instruction-tuned checkpoints were included for Qwen3, OpenChat 3.5 and DeepSeek LLM; their base-model configurations were excluded from the experimental selection.}
+\label{tab:results-zs}
+\end{table}

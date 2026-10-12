@@ -1,0 +1,13 @@
+Your task is to analyze news articles with misleading or provocative headlines and generate a concise summary that reveals the true information behind the headline. 
+
+Here is the headline:
+{article_headline}
+
+The headline suggests a question, exaggeration, or incomplete information. 
+Your goal is to write one single-sentence summary that clearly states the factual content or main idea of the article, especially the part that clarifies or refutes what the headline implies.
+
+Base your summary strictly on the information provided in the article body. 
+Do not invent or assume anything that is not explicitly stated. If the article contains a quote that expresses the core truth, you may include it within quotation marks. Keep the summary as short and direct as possible, and respond only in Spanish.
+
+Here is the article body:
+{article_body}

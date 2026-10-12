@@ -1,0 +1,3 @@
+Based on the news article, give a concise answer that directly addresses the question behind the headline.
+
+Headline: {article_headline}

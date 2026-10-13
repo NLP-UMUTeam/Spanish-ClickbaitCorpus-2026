@@ -41,6 +41,9 @@ MICIU/AEI/10.13039/501100011033 and the European Regional Development Fund
 (ERDF/EU) — a way of making Europe. Tomás Bernal-Beltrán is supported by the
 University of Murcia through its predoctoral programme.
 
+## Abstract
+This paper presents a systematic comparison of Question Answering (QA) and summarization paradigms for clickbait resolution in Spanish. We introduce Spanish ClickbaitCorpus 2026, a new dataset comprising 1,148 Spanish news articles with clickbait-style headlines, each paired with an extractive answer span designed to resolve the informational gap induced by the headline. Using this corpus, we evaluate several open-source Large Language Models (LLMs) under both Zero-Shot (ZS) and Supervised Fine-Tuning (SFT) settings. Performance is assessed using complementary lexical and semantic metrics, including Recall-Oriented Understudy for Gisting Evaluation (ROUGE-1, ROUGE-2, ROUGE-L and ROUGE-Lsum), the BERT-based semantic similarity metric BERTScore F1, and a Hybrid indicator that combines structural and contextual alignment. Statistical significance is evaluated through paired bootstrap resampling. Across models and experimental conditions, QA consistently outperforms summarization. The advantage is particularly pronounced in the ZS setting and remains statistically reliable after SFT, although the performance gap narrows with task-specific adaptation. These findings suggest that framing clickbait resolution as an explicit QA problem provides a stronger structural inductive bias, promoting span-level grounding and more stable resolution of the informational gap. Future work will focus on developing Spanish-language LLMs specifically tuned for clickbait resolution and expanding the corpus with additional multimodal sources and annotations to strengthen coverage and representativeness.
+
 ## Overview
 
 The experimental workflow is:

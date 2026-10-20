@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+ & \textbf{Train} & \textbf{Validation} & \textbf{Test} \\
+\midrule
+\textbf{Number of articles} & 918 & 115 & 115 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Headline length (words)}} \\
+Mean & 16 & 16 & 17 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Article length (words)}} \\
+Mean & 444 & 446 & 418 \\
+Median & 402 & 412 & 389 \\
+Maximum & 1481 & 1591 & 1250 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Answer length (words)}} \\
+Mean & 12 & 12 & 12 \\
+Median & 9 & 8 & 11 \\
+90th percentile & 28 & 28 & 27 \\
+Maximum & 85 & 70 & 45 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Source distribution}} \\
+Number of unique sources & 163 & 59 & 53 \\
+Largest source share (\%) & 7.95 & 6.96 & 7.83 \\
+\bottomrule
+\end{tabular}
+\caption{Dataset statistics for the training, validation and test splits of Spanish ClickbaitCorpus 2026. Text lengths are measured in words. The largest source share represents the percentage of articles contributed by the most frequent news outlet in each split.}
+\label{tab:wordcounts}
+\end{table}

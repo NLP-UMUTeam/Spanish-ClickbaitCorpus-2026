@@ -1,0 +1,13 @@
+Your task is to analyze news articles with misleading or provocative headlines and extract a short answer that reveals the truth behind the headline.
+
+Here is the headline:
+{article_headline}
+
+The headline suggests a question or provides incomplete information. 
+Your goal is to find the exact span of text in the article body that answers what is implied or asked by the headline.
+
+Always copy the answer verbatim from the article. Do not invent, paraphrase, or summarize. 
+Use the fewest words possible, and respond only in Spanish.
+
+Here is the article body:
+{article_body}

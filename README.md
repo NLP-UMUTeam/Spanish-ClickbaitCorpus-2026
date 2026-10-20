@@ -2,6 +2,8 @@
 
 ## Question Answering vs. Summarization for Clickbait Resolution in Spanish
 
+**GitHub Repository:** [NLP-UMUTeam/Spanish-ClickbaitCorpus-2026](https://github.com/NLP-UMUTeam/Spanish-ClickbaitCorpus-2026)
+
 Spanish ClickbaitCorpus 2026 is a Spanish-language resource for clickbait
 resolution. Each example pairs a clickbait-style news headline with an
 extractive answer span from its article body that resolves the headline's
